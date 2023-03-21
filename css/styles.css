@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    background-color:rgb(0, 128, 117);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: lawngreen;
+    text-shadow: 0 0 5px black;
+    padding: 10px;
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 128, 117);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(8, 200px);
+    padding: 10px;
+    grid-gap: 10px;
+
+}
+.item{
+    background-color: orange;
+    border: 2px solid black;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.item:hover{
+    
+    transform: scale(1.1);
+    transition: all 0.9s;
+}
+
+.item1{
+    background-image: url(../pic/anillo1.jpg);
+}
+.item2{
+    background-image: url(../pic/anillo2.jpg);
+    
+}
+.item3{
+    background-image: url(../pic/anillo3.jpg);
+}
+.item4{
+    background-image: url(../pic/anillo4.jpg);
+    
+}
+.item5{
+    background-image: url(../pic/anillo6.jpg);
+}
+.item6{
+    background-image: url(../pic/anillo7.jpg);
+}
+.item7{
+    background-image: url(../pic/anillo8.jpg);
+}
+.item8{
+    background-image: url(../pic/anillo9.jpg); 
+}
+
+div{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(0, 128, 117);
+}
+
+p{
+    font-weight: bold;
+}
+
+.funcion{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 25px
+}
+.funcion1{
+    text-align: center;
+}
+.funcion2{
+    text-align: center;
+}
+
+.pie{
+    width: 100%;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: lawngreen;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200);
+    }
+
+.item1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item4{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.item5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.item6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.item7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.item8{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+}
+@media only screen and (min-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+}
